@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: #b6ccfe;
+  position: relative;
+  background-size: cover;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar img {
+  width: 100%;
+  height: 100%;
+  margin-left: 10px;
+}
+
+.navbar ul {
+  margin-top: -2px;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  /* padding: 10px 16px; */
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 16px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.6s ease-in-out;
+  border: none;
+  border-radius: 10px;
+}
+
+.navbar ul li a:hover {
+  padding: 8px 16px;
+  background-color: #3a0ca3;
+  color: #e63946;
+
+}
+
+#hero {
+  margin-top: 5px;
+  margin-left: 10px;
+  position: relative;
+
+}
+
+.hero_info h1 {
+  font-size: 40px;
+}
+
+.hero_info h1 span {
+  color: #e63946;
+}
+
+.hero_info h3 {
+  font-size: 19px;
+}
+
+.hero_info h3 span {
+  color: #e63946;
+}
+
+
+.mida button {
+  margin-top: 5px;
+  padding: 8px 16px;
+  border: none;
+  font-size: 20px;
+  border-radius: 40px;
+  background: #e63946;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.6s ease-in-out;
+}
+
+.mida button:hover {
+  background: blueviolet;
+  /* transform: scale(2); */
+}
+
+.mida {
+  margin-top: 8px;
+  position: relative;
+}
+
+.mida #sosail {
+  margin: 0 8px;
+  font-size: 20px;
+
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  background: #3a0ca3;
+  color: aqua;
+  position: relative;
+  box-shadow: 0 0 3px 5px #0e48c7;
+}
+
+.mida #sosail:hover {
+  background: #e63946;
+  transform: scale(1.4);
+}
