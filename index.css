@@ -1,1 +1,108 @@
- 
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Segoe UI', sans-serif;
+ }
+
+ body {
+   min-height: 100vh;
+   background: linear-gradient(135deg, #2b5876, #4e4376);
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+ }
+
+ .contant {
+   width: 1200px;
+   padding: 30px;
+ }
+
+ /* BUTTON */
+ .btn {
+   padding: 16px 35px;
+   border-radius: 50px;
+   font-size: 18px;
+   font-weight: 600;
+   border: none;
+   cursor: pointer;
+   color: #fff;
+   background: linear-gradient(135deg, #43cea2, #185a9d);
+   box-shadow: 0 15px 30px rgba(0, 0, 0, .3);
+   transition: .4s ease;
+ }
+
+ .btn:hover {
+   transform: translateY(-3px) scale(1.05);
+   box-shadow: 0 25px 45px rgba(0, 0, 0, .4);
+ }
+
+ /* GRID LAYOUT */
+ .text {
+   margin-top: 40px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+   gap: 30px;
+ }
+
+ /* CARD */
+ .text_box {
+   padding: 50px;
+   border-radius: 25px;
+   background: rgba(255, 255, 255, .15);
+   backdrop-filter: blur(12px);
+   border: 1px solid rgba(255, 255, 255, .2);
+   box-shadow: 0 20px 40px rgba(0, 0, 0, .25);
+   color: #fff;
+   animation: boxIn .8s ease forwards;
+   transition: .5s ease;
+   position: relative;
+   overflow: hidden;
+ }
+
+ /* GLOW EFFECT */
+ .text_box::before {
+   content: "";
+   position: absolute;
+   inset: 0;
+   background: linear-gradient(120deg, transparent, rgba(255, 255, 255, .3), transparent);
+   transform: translateX(-100%);
+ }
+
+ .text_box:hover::before {
+   transform: translateX(100%);
+   transition: 1s;
+ }
+
+ .text_box:hover {
+   transform: translateY(-12px) scale(1.02);
+ }
+
+ /* TITLE */
+ .text_box h1 {
+   font-size: 26px;
+   margin-bottom: 15px;
+   background: linear-gradient(90deg, #00f2fe, #4facfe);
+   -webkit-background-clip: text;
+   color: transparent;
+ }
+
+ /* DESCRIPTION */
+ .text_box p {
+   font-size: 17px;
+   line-height: 1.7;
+   color: #e0f7fa;
+ }
+
+ /* ANIMATION */
+ @keyframes boxIn {
+   0% {
+     transform: translateY(50px) scale(.9);
+     opacity: 0;
+   }
+
+   100% {
+     transform: translateY(0) scale(1);
+     opacity: 1;
+   }
+ }
